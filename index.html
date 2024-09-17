@@ -36,21 +36,15 @@
     <!-- Start of Mobile Menu -->
     <div class="mobile_menu">
       <div class="mobile_menu_inner">
-        <div class="mobile_in">
-          <div class="logo">
-            <a class="brandon-menu" href="#"
-              ><span>brandonharris</span
-              ><span class="brandon-menu-color">.dev</span></a
-            >
-          </div>
-          <div class="trigger">
-            <div
-              class="hamburger hamburger--slider"
-              onclick="toggleMobileMenu()"
-            >
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
+        <div class="logo">
+          <a href="#">
+            <span class="brandon-menu">brandonharris</span><span class="brandon-menu-color">.dev</span>
+          </a>
+        </div>
+        <div class="trigger">
+          <div class="hamburger"  onclick="toggleMobileMenu()">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
             </div>
           </div>
         </div>
@@ -62,11 +56,13 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#cta">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
     <!-- End of Mobile Menu -->
+
 
     <!-- Start of Header -->
     <div class="qk_header">
@@ -261,7 +257,7 @@
           </a>
         </div>
         <div class="about-image">
-          <img src="img/hero2.jpg" alt="About Me Image" />
+          <img src="img/me1.png" alt="About Me Image" />
         </div>
       </div>
     </section>
@@ -479,7 +475,16 @@
       </div>
     </footer>
     <!-- End of Footer Section -->
-
+    <!-- Add the JavaScript for mobile menu functionality -->
+    <script>
+      function toggleMobileMenu() {
+        const hamburger = document.querySelector('.hamburger');
+        const dropdown = document.querySelector('.dropdown');
+        
+        hamburger.classList.toggle('is-active');
+        dropdown.classList.toggle('show');
+      }
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
